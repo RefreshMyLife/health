@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { FC } from 'react';
+import AppRouter from './compenents/AppRouter';
+import Navbar from './compenents/Navbar';
+import { Content, Footer } from 'antd/es/layout/layout';
+import { Layout, Space } from 'antd';
 import './App.css';
-
-function App() {
+const App: FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Space direction="vertical" style={{ width: '100%' }} size={[0, 48]}>
+      <Layout>
+        <Navbar />
+        <Content>
+          <AppRouter />
+        </Content>
+        {/* <Footer>footer</Footer> */}
+      </Layout>
+    </Space>
   );
-}
+};
 
 export default App;

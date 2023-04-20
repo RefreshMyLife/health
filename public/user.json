@@ -1,0 +1,26 @@
+[
+  {
+    "username": "user",
+    "password": "111",
+    "events": {
+      "info": "djsfhsjdf",
+      "date": "04.03.2023"
+    }
+  },
+  {
+    "username": "admin",
+    "password": "111",
+    "events": {
+      "info": "djsfhsjdf",
+      "date": "01.03.2023"
+    }
+  },
+  {
+    "username": "test",
+    "password": "111",
+    "events": {
+      "info": "djsfhsjdf",
+      "date": "14.03.2023"
+    }
+  }
+]
